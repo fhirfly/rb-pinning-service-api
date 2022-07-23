@@ -23,6 +23,7 @@ RUN apk add --update \
     curl-dev \
  && rm -rf /var/cache/apk/* \
  && gem update --system \
+ && gem 'mimemagic', '~> 0.3.10' \
  && gem install bundler foreman \
  && bundle config --global frozen 1 \
  && bundle config set without 'test' \
